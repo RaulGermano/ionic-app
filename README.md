@@ -1,9 +1,8 @@
 # Ionic App
 
-How can we use a API on Ionic 4.2.0/Angular 8.1.2
+How consume REST API using Ionic 4.2.0 and Angular 8.1.2
 
 [Pokemon API](https://link)
-
 
 Return:
 ```json
