@@ -1,7 +1,31 @@
 # Ionic App
 
-## How can we use a API on Ionic 4.2.0/Angular 8.1.2
+How can we use a API on Ionic 4.2.0/Angular 8.1.2
 
-## API link: https://pokeapi.co/api/v2/pokemon/
+[Pokemon API](https://link)
 
 
+Return:
+```json
+{
+	"count": 964,
+	"next": "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
+	"previous": null,
+	"results": [
+		{
+			"name": "bulbasaur",
+			"url": "https://pokeapi.co/api/v2/pokemon/1/"
+		},
+		{
+			"name": "ivysaur",
+			"url": "https://pokeapi.co/api/v2/pokemon/2/"
+		},
+		{
+			"name": "venusaur",
+			"url": "https://pokeapi.co/api/v2/pokemon/3/"
+        },
+        
+        ...
+    ]
+}
+```
