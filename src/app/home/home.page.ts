@@ -11,13 +11,23 @@ export class HomePage {
 
 	constructor(public http: HttpClient) {}
 
-	async GetPokemonList() {
-		await this.http
-			.get('https://pokeapi.co/api/v2/pokemon/')
-			.subscribe(data => {
-				const list = <any>data;
+	// GetPokemonList() {
+	// 	this.http.get('https://pokeapi.co/api/v2/pokemon/').subscribe(data => {
+	// 		const list = <any>data;
 
-				this.pokemonList = list.results;
-			});
+	// 		this.pokemonList = list.results;
+	// 	});
+	// }
+
+	async GetPokemonList() {
+		const response = await fetch(
+			'http://localhost:3030/select-parkings/?excluded=false'
+		);
+		// const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
+		const list = await response.json();
+
+		console.log(list);
+
+		// this.pokemonList = list.results;
 	}
 }
